@@ -1,3 +1,1 @@
-﻿# GetFast: On our way to define new way of job search
- 
-
+GetFast: On our way to define new way of job search
