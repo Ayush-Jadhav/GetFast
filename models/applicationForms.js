@@ -121,21 +121,3 @@ const jobSchema = new mongoose.Schema(
 );
 
 module.exports = mongoose.model("Job", jobSchema);
-
-// auto validation part not work in case of update
-// FIND_BY_ID_AND_UPDATE
-// const updatedJob = await Job.findByIdAndUpdate(
-//     jobId,
-//     { maxExp: 3 }, // The new data to update
-//     {
-//         new: true,
-//         runValidators: true // <-- THIS IS THE CRITICAL OPTION
-//     }
-// );
-
-// // UPDATE_ONE
-// await Job.updateOne(
-//     { _id: jobId },
-//     { maxExp: 3 },
-//     { runValidators: true } // <-- ADD IT HERE AS WELL
-// );
